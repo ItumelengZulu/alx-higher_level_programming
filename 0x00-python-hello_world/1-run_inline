@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# to check if the PYFile env var -z test operator in shell scripting is used to check whether a string is empty or not
+if [ -z "$PYFILE" ]; then 
+    echo "Error: PYFILE env var not set."
+    exit 1
+fi
+
+# to run the script in python
+python3 "$PYCODE"
